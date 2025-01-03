@@ -8,14 +8,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.ExtentTest;
+
 public class LoginPage {
 	
 	WebDriver driver;
 	WebDriverWait wait;
+	 ExtentTest test;
 	
-	public LoginPage(WebDriver driver) {
+	public LoginPage(WebDriver driver, ExtentTest test) {
 		this.driver = driver;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 this.test = test;
 	}
 	
 	By SigninLink = By.linkText("Sign in");
@@ -27,23 +31,27 @@ public class LoginPage {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement signinElement = wait.until(ExpectedConditions.elementToBeClickable(SigninLink));
 		signinElement.click();
+		test.pass("Clicked on Sign in link.");
 	}
 	public void enterEmail() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement emailElement = wait.until(ExpectedConditions.elementToBeClickable(Email));
 		emailElement.click();
-		emailElement.sendKeys("ramuraorr123@gmail.com");
+		emailElement.sendKeys("srinivasrao11@gmail.com");
+		test.pass("Entered email successfully.");
 	}
 	public void enterPassword() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement passwordElement = wait.until(ExpectedConditions.elementToBeClickable(Password));
 		passwordElement.click();
-		passwordElement.sendKeys("RamuRao@12");
+		passwordElement.sendKeys("Srinivas@4455");
+		test.pass("Entered password successfully.");
 	}
 	public void clickonLoginButton() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement loginElement = wait.until(ExpectedConditions.elementToBeClickable(LoginButton));
 		loginElement.click();
+		test.pass("Clicked on Login button.");
 	}
 
 }

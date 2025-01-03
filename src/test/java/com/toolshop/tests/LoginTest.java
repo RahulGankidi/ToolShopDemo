@@ -11,11 +11,14 @@ public class LoginTest extends BasePage {
 	
 	@Test
 	public void LoginPage() {
-		loginpage = new LoginPage(driver);
+		test = extent.createTest("Login Test").info("Login Test Execution Started");
+		loginpage = new LoginPage(driver, test);
 		loginpage.clickonSigninLink();
 		loginpage.enterEmail();
 		loginpage.enterPassword();
 		loginpage.clickonLoginButton();
+		
+		test.info("Login Test Execution Completed.");
 	}
 
 }

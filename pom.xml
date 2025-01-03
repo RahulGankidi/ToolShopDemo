@@ -22,5 +22,11 @@
             <version>7.10.0</version> <!-- Use the latest version -->
             <scope>test</scope>
         </dependency>
+        		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.8</version>
+</dependency>
     </dependencies>
 </project>
