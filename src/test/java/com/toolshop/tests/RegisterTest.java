@@ -11,7 +11,8 @@ public class RegisterTest extends BasePage {
 	
 	@Test
 	public void RegisterTest() {
-		registerpage = new RegisterPage(driver);
+		test = extent.createTest("Register Test").info("Register Test Execution Started");
+		registerpage = new RegisterPage(driver, test);
 		registerpage.clickonSignIn();
 		registerpage.clickonRegisterLink();
 		registerpage.enterFirstname();
@@ -27,6 +28,8 @@ public class RegisterTest extends BasePage {
 		registerpage.enterEmail();
 		registerpage.enterPassword();
 		registerpage.clickonRegisterButton();
+		
+		test.info("Register Test Execution Completed Successfully");
 	}
 
 }
