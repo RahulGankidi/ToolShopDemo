@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-03T10:09:19 GMT" name="Default suite" finished-at="2025-01-03T10:09:21 GMT" duration-ms="2128">
+  <suite started-at="2025-01-06T09:24:14 GMT" name="Default suite" finished-at="2025-01-06T09:24:19 GMT" duration-ms="5627">
     <groups>
     </groups>
-    <test started-at="2025-01-03T10:09:19 GMT" name="Default test" finished-at="2025-01-03T10:09:21 GMT" duration-ms="2128">
-      <class name="com.toolshop.tests.LoginTest">
-        <test-method is-config="true" signature="openBrowserUrl()[pri:0, instance:com.toolshop.tests.LoginTest@3e27aa33]" started-at="2025-01-03T10:09:10 GMT" name="openBrowserUrl" finished-at="2025-01-03T10:09:19 GMT" duration-ms="8786" status="PASS">
+    <test started-at="2025-01-06T09:24:14 GMT" name="Default test" finished-at="2025-01-06T09:24:19 GMT" duration-ms="5627">
+      <class name="com.toolshop.tests.RegisterTest">
+        <test-method is-config="true" signature="openBrowserUrl()[pri:0, instance:com.toolshop.tests.RegisterTest@3e27aa33]" started-at="2025-01-06T09:24:06 GMT" name="openBrowserUrl" finished-at="2025-01-06T09:24:14 GMT" duration-ms="7589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserUrl -->
-        <test-method signature="LoginPage()[pri:0, instance:com.toolshop.tests.LoginTest@3e27aa33]" started-at="2025-01-03T10:09:19 GMT" name="LoginPage" finished-at="2025-01-03T10:09:21 GMT" duration-ms="1983" status="PASS">
+        <test-method signature="RegisterTest()[pri:0, instance:com.toolshop.tests.RegisterTest@3e27aa33]" started-at="2025-01-06T09:24:14 GMT" name="RegisterTest" finished-at="2025-01-06T09:24:19 GMT" duration-ms="5513" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginPage -->
-        <test-method is-config="true" signature="closeBrowserUrl()[pri:0, instance:com.toolshop.tests.LoginTest@3e27aa33]" started-at="2025-01-03T10:09:21 GMT" name="closeBrowserUrl" finished-at="2025-01-03T10:09:23 GMT" duration-ms="1417" status="PASS">
+        </test-method> <!-- RegisterTest -->
+        <test-method is-config="true" signature="closeBrowserUrl()[pri:0, instance:com.toolshop.tests.RegisterTest@3e27aa33]" started-at="2025-01-06T09:24:19 GMT" name="closeBrowserUrl" finished-at="2025-01-06T09:24:23 GMT" duration-ms="3541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserUrl -->
-      </class> <!-- com.toolshop.tests.LoginTest -->
+      </class> <!-- com.toolshop.tests.RegisterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
